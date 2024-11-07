@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+div {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+input [type="text"] {
+  padding: 10px;
+  width: 80%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Section de filtrage */
+button + button {
+  margin-left: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Liste des tâches */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding:15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed p {
+  text-decoration: line-through;
+  color: #777;
+}
+
+li button {
+  background-color: #28a745;
+  margin-right: 5px;
+}
+
+li button:hover {
+  background-color: #218838;
+}
+
+li button.remove {
+  background-color: #dc3545;
+}
+
+li button.remove:hover {
+  background-color: #c82333;
+}
+
+li button.edit {
+  background-color: #ffc107;
+}
+
+li button.edit:hover {
+  background-color: #e0a800;
+}
+
+li button.move-up,
+li button.move-down {
+  background-color: #007bff;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+li button.move-up:hover,
+li button.move-down:hover {
+  background-color: #0056b3;
+}
+
+li input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Modifications du texte */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.remove-button {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
